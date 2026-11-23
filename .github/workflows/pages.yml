@@ -1,0 +1,57 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Decode binary assets
+        run: |
+          python3 << 'PY'
+          from pathlib import Path
+          import base64
+          root = Path(".")
+          src = root / "assets-b64"
+          if not src.exists():
+              raise SystemExit("assets-b64 missing")
+          for p in src.rglob("*.b64"):
+              rel = p.relative_to(src)
+              dest = root / "assets" / rel.with_suffix("")
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              dest.write_bytes(base64.b64decode("".join(p.read_text().split())))
+              print(f"decoded {dest} {dest.stat().st_size} bytes")
+          PY
+
+      - name: Omit encoder sources from the published site
+        run: rm -rf assets-b64
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

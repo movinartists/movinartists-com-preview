@@ -13,7 +13,7 @@ Live site: [www.movinartists.com](https://www.movinartists.com)
 
 To view locally: serve this folder with any static server (for example `python3 -m http.server`). All asset and page links are relative so they also work under the GitHub Pages `/movinartists-com-preview/` subpath.
 
-To publish as GitHub Pages: repo Settings → Pages → Deploy from a branch → `main` / `/ (root)` → Save. The preview URL will be:
+To publish as GitHub Pages: repo Settings → Pages → Source: **GitHub Actions** → Save (the deploy workflow is already in `.github/workflows/pages.yml`). The preview URL will be:
 
 https://movinartists.github.io/movinartists-com-preview/
 

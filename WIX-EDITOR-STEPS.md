@@ -6,7 +6,7 @@ The GitHub half of this technique is already done in this repo. The Wix Studio e
 
 https://github.com/movinartists/movinartists-com-preview
 
-The preview URL, once GitHub Pages is turned on (Settings → Pages → Deploy from a branch → Branch `main` → folder `/ (root)` → Save), will be:
+The preview URL, once GitHub Pages is turned on (Settings → Pages → Source: GitHub Actions → Save), will be:
 
 https://movinartists.github.io/movinartists-com-preview/
 

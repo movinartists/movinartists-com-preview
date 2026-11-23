@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Movin' Artists — private mockup</title>
+  <link rel="icon" type="image/png" href="assets/mark/chrome-ma-160.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/community.css">
+</head>
+<body>
+  <a class="skip-link" href="#core">Skip arrival</a>
+<canvas id="grid" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/mark/chrome-ma-160.png" width="42" height="42" alt="Movin' Artists M/A mark">
+      <span class="brand-text">
+        <span class="org">MOVIN' ARTISTS</span>
+        <span class="sub">The Current</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="news.html">News &amp; Events</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact Us</a>
+      <span class="nav-sub">
+<a href="blog.html">Blog</a>
+        <a href="shop.html">Shop</a>
+        <a href="events.html">Events</a>
+        <a href="plans.html">Plans</a>
+        <a href="return-policy.html">Return Policy</a>
+      </span>
+      <span class="nav-login" title="Members log-in lives on the live Wix site and is not wired in this mockup">Log In</span>
+    </nav>
+  </header>
+
+  <section id="approach" aria-label="Arrival">
+    <div class="approach-sticky">
+      <div class="hud">
+        <div class="tl">Grid status<b data-hud="status">Approaching</b></div>
+        <div class="tr">Frequency<b>Open</b></div>
+        <div class="bl">Receiver<b data-hud="recv">Standby</b></div>
+        <div class="br">Origin<b>Rhode Island</b></div>
+      </div>
+      <div class="sigil-wrap" id="sigil-wrap">
+        <span class="ring" aria-hidden="true"></span>
+        <span class="ring" aria-hidden="true"></span>
+        <span class="ring" aria-hidden="true"></span>
+        <img src="assets/mark/chrome-ma.png" alt="Movin' Artists sigil">
+      </div>
+      <div class="approach-copy" id="approach-copy">
+        <p class="whisper is-on" data-at="0">The gate is open</p>
+        <p data-at="0.18">M is the twin flame — dual in form, united in motion.</p>
+        <p data-at="0.38">A is the gate — enter in silence… leave in signal.</p>
+        <p class="whisper" data-at="0.55">We move between. We move beyond.</p>
+        <p class="whisper" data-at="0.68">What do you see in the space between?</p>
+        <p class="received" data-at="0.82">A shape remembered. A signal received.</p>
+        <p class="received" data-at="0.92">You have been received.</p>
+      </div>
+      <button class="skip-approach" type="button" id="skip-approach">Skip arrival — enter the grid</button>
+    </div>
+  </section>
+
+  <section id="core">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/mark/chrome-ma-400.png">
+      <source src="assets/video/hero_720p.mp4" type="video/mp4">
+    </video>
+    <div class="arch" aria-hidden="true">THE CURRENT</div>
+    <div class="core-inner">
+      <p class="section-kicker">Home / The core</p>
+      <img class="core-mark" src="assets/mark/chrome-ma-400.png" alt="Movin' Artists M/A mark">
+      <h1 class="lede">What Moves You?</h1>
+      <p class="mythos">The Market is where the work is offered. The Current is where it's remembered.</p>
+      <p class="small">Experience a thriving community that fosters collaboration and creativity among artists, musicians, and content creators. Let's amplify your voice together.</p>
+      <p class="small">Movin' Artists is a vibrant community dedicated to inspiring collaboration and growth among artists, musicians, and content creators. By fusing art and business, we provide resources to nurture talent and foster meaningful connections. Our future plans include the establishment of a Creative Rec Room, a space dedicated to collaboration and innovation, where ideas come to life.</p>
+      <div class="services">
+        <article class="plate">
+          <span class="stamp">01</span>
+          <h3>Community Building</h3>
+          <p>Grow your network and connect with like-minded individuals in our diverse community.</p>
+        </article>
+        <article class="plate">
+          <span class="stamp">02</span>
+          <h3>Media Production</h3>
+          <p>Professional media production services that capture your vision and amplify your voice in the digital space.</p>
+        </article>
+      </div>
+      <h2 class="lede" style="font-size:2.2rem;margin-top:2.4rem;">What Our Members Say</h2>
+      <div class="services">
+        <article class="plate">
+          <p class="small">“Was able to collaborate with other local businesses that I never thought to connect with!” — Maria Gonzalez</p>
+        </article>
+        <article class="plate">
+          <p class="small">“I found my creative community here!” — Samira Patel</p>
+        </article>
+        <article class="plate">
+          <p class="small">“The networking opportunity changed everything for my business!” — John Lee</p>
+        </article>
+      </div>
+      <p class="small" style="margin-top:1.2rem;"><a href="about.html">About Us</a> · <a href="community.html">Open the full Community lineup</a> · <a href="contact.html">Contact</a></p>
+      <p class="runes">ᛃᛟᛁᚾ ᚢᛊ</p>
+    </div>
+  </section>
+
+  <section id="current" aria-label="The Current — Code Carriers">
+    <div id="carrier-backdrop" hidden aria-hidden="true"></div>
+    <div id="carrier-exit" hidden aria-hidden="true">
+      <button type="button" id="carrier-back">← Back to the grid</button>
+      <div class="carrier-step">
+        <button type="button" id="carrier-prev" aria-label="Previous carrier">‹</button>
+        <button type="button" id="carrier-next" aria-label="Next carrier">›</button>
+      </div>
+    </div>
+    <div id="stage">
+      <p id="hint">Tap a carrier</p>
+      <div id="lineup-wrap">
+        <div id="lineup" role="list"></div>
+      </div>
+    </div>
+  </section>
+  <div id="giant-num" aria-hidden="true"></div>
+  <aside id="field-log" aria-hidden="true" aria-label="Field log">
+    <div class="card-top">
+      <img class="card-mark" src="assets/mark/chrome-ma-400.png" width="52" height="52" alt="Movin' Artists M/A mark">
+      <p class="card-label">Field log</p>
+      <button type="button" id="card-close" aria-label="Close field log">&times;</button>
+    </div>
+    <p class="card-number" data-field="number">CARRIER 00</p>
+    <h2 class="card-name" data-field="name"></h2>
+    <hr class="card-rule">
+    <div class="kit-logo-wrap" hidden><img alt="Kit Pedraza logo"></div>
+    <div class="field">
+      <span class="k">Transmission</span>
+      <span class="v" data-field="bio"></span>
+    </div>
+    <div class="field">
+      <span class="k">Handle</span>
+      <a class="v" data-field="handle" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+    <div class="field market">
+      <span class="k">Market</span>
+      <a href="https://www.movinartistsmarket.com" target="_blank" rel="noopener noreferrer">www.movinartistsmarket.com</a>
+    </div>
+    <p class="runes" lang="und">ᛃᛟᛁᚾ ᚢᛊ</p>
+  </aside>
+
+  <section id="activations" class="section">
+    <div class="arch" aria-hidden="true">SIGNAL</div>
+    <p class="section-kicker">Activations</p>
+    <h2 class="lede"><a href="news.html" style="color:inherit;text-decoration:none;">News &amp; Events</a></h2>
+    <p class="small">Discover upcoming Movin’ Artists events, showcases, and creative news across Rhode Island and New England.</p>
+    <span class="stamp">Event list</span>
+    <p class="mythos">No events at the moment.</p>
+    <div class="act-grid">
+      <article class="plate">
+        <span class="stamp">From the site</span>
+        <p class="small">Stay Updated with Us. Join our vibrant community of creators and entrepreneurs! Discover the latest happenings, upcoming collaborations, and insights in the arts and entertainment industry.</p>
+        <div class="word-row">
+          <span>Performances</span><span>Networking Night</span>
+          <span>Collaborative Jam</span><span>Meetups</span><span>Live Shows</span>
+          <span>Round Tables</span><span>Summits</span><span>Open Mic</span>
+        </div>
+        <p class="small" style="margin-top:1rem;">Exhibitions showcasing local talent. Live performances by emerging artists. Network with fellow creatives and businesses.</p>
+      </article>
+    </div>
+    <div class="posts">
+      <a class="plate" href="post-rhode-island-filming.html" target="_blank" rel="noopener noreferrer">
+        <div class="meta">Matthew Keiper · Nov 12, 2025 · 4 min</div>
+        <h3>Rhode Island Filming: Unlock Creative Outdoor Treasures</h3>
+        <p class="small">Ever feel stuck in a creative rut, staring at the same four walls? Rhode Island, despite its small size, offers a diverse landscape ripe for Outdoor Filming.</p>
+      </a>
+      <a class="plate" href="post-providence-film.html" target="_blank" rel="noopener noreferrer">
+        <div class="meta">Matthew Keiper</div>
+        <h3>Providence Film: Beat Creative Blocks! Scenic RI Spots</h3>
+        <p class="small">Ever stared blankly at a script, a camera, or an editing timeline, feeling your creative well run dry? We’ve all been there.</p>
+      </a>
+      <a class="plate" href="post-ri-filming-hidden-gems.html" target="_blank" rel="noopener noreferrer">
+        <div class="meta">Matthew Keiper</div>
+        <h3>RI Filming: Unlock Hidden Gems &amp; Beat Creative Block</h3>
+        <p class="small">Ever stared blankly at your gear, the Rhode Island landscape stretching before you, inspiration nowhere to be found? You’re not alone.</p>
+      </a>
+    </div>
+    <p class="runes">ᛃᛟᛁᚾ ᚢᛊ</p>
+  </section>
+
+  <section id="market" class="section">
+    <div class="arch" aria-hidden="true">MARKET</div>
+    <div class="market-inner">
+      <div>
+        <p class="section-kicker">The Market</p>
+        <h2 class="lede">Where the work is offered</h2>
+        <p class="mythos">The Market is where the work is offered. The Current is where it's remembered.</p>
+        <p class="small">Movin' Artists Market lives at its own gate. Plans &amp; Pricing on this site currently reads: “No plans available.”</p>
+        <a class="portal-link" href="https://www.movinartistsmarket.com" target="_blank" rel="noopener noreferrer">www.movinartistsmarket.com</a>
+        <div class="barcode" aria-hidden="true"></div>
+      </div>
+      <article class="plate product">
+        <span class="stamp">On this site · sale</span>
+        <img src="assets/product/scene-creation.jpg" alt="Scene creation">
+        <h3 class="lede" style="font-size:2.2rem;">Scene creation</h3>
+        <p class="price"><s>$95.89</s> $50.00</p>
+        <p class="small">At Movin' Artists, we bring your vision to life by helping put you into a scene using photo references to build you into whatever you're looking for. Our Scene creation service sparks collaboration and creativity, empowering artists, musicians, and creators.</p>
+      </article>
+    </div>
+    <p class="runes" style="max-width:72rem;margin:2rem auto 0;">ᛃᛟᛁᚾ ᚢᛊ</p>
+  </section>
+
+
+  <section id="receive" class="section">
+    <div class="arch" aria-hidden="true">RECEIVE</div>
+    <p class="section-kicker">Join / Receive the signal</p>
+    <h2 class="lede">Get in Touch</h2>
+    <p class="small">We'd love to hear from you! Reach out for collaboration inquiries, project ideas, or simply to connect.</p>
+    <p class="small">Joining Movin' Artists empowers you to elevate your creative journey while connecting with a vibrant community. Collaborate, inspire, and thrive together.</p>
+    <form id="join-form" action="#" method="post">
+      <div class="form-grid">
+        <label>First name * <input name="first" required></label>
+        <label>Last name <input name="last"></label>
+        <label>Email * <input type="email" name="email" required></label>
+        <label>Phone <input name="phone"></label>
+        <label>Link <input name="link" placeholder="social or site"></label>
+        <label>Artists / Business
+          <select name="kind">
+            <option value="">Choose one</option>
+            <option>Artist (music)</option>
+            <option>Creator (all other mediums)</option>
+            <option>Business</option>
+            <option>Code Carrier</option>
+          </select>
+        </label>
+        <label class="full">Reasons you want to join or any other information you'd like to share
+          <textarea name="reason"></textarea>
+        </label>
+        <div class="full"><button type="submit">Submit</button></div>
+      </div>
+      <p class="form-note" id="form-note">This is a private local mockup. The form does not send and is not connected to Wix.</p>
+    </form>
+    <div class="socials">
+      <a href="https://www.instagram.com/movinartists" target="_blank" rel="noopener noreferrer">@movinartists</a>
+      <a href="https://www.instagram.com/movinartistsmarket/" target="_blank" rel="noopener noreferrer">@movinartistsmarket</a>
+      <span>#code carrier</span>
+    </div>
+    <div class="collab">
+      <article class="plate">
+        <span class="stamp">Collaborator</span>
+        <h3>Juan Batista</h3>
+        <p>A versatile professional proficient in both marketing &amp; the arts, adept at uniting communities through the power of humor/music. Captivating performance on stage and fostering connections off stage.</p>
+      </article>
+      <article class="plate">
+        <span class="stamp">Collaborator</span>
+        <h3>Calvin (CaliTats)</h3>
+        <p>Named on the About page. No official bio published there.</p>
+      </article>
+      <article class="plate">
+        <span class="stamp">Admin · Blog</span>
+        <h3>Matthew Keiper</h3>
+        <p>Public member profile (Admin). Join date: Nov 5, 2025. Author of the three Rhode Island filming posts. The About page still carries Wix template service copy beside his name — not used here.</p>
+      </article>
+    </div>
+    <p class="runes">ᛃᛟᛁᚾ ᚢᛊ</p>
+  </section>
+
+  <footer class="site-footer">
+    <p class="runes">ᛃᛟᛁᚾ ᚢᛊ</p>
+    <p class="credit">© made By: Movin' Artists</p>
+    <p class="credit">Private mockup — not published</p>
+    <div class="quotes">
+      <p>“M is the twin flame — dual in form, united in motion.”</p>
+      <p>“A is the gate — enter in silence… leave in signal.”</p>
+      <p>We move between. We move beyond.</p>
+    </div>
+  </footer>
+
+  <script src="js/grid.js"></script>
+  <script src="js/carriers.js"></script>
+  <script src="js/community.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

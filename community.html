@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Community | Movin' Artists</title>
+  <link rel="icon" type="image/png" href="assets/mark/chrome-ma-160.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/community.css">
+</head>
+<body class="community-page">
+<canvas id="grid" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/mark/chrome-ma-160.png" width="42" height="42" alt="Movin' Artists M/A mark">
+      <span class="brand-text">
+        <span class="org">MOVIN' ARTISTS</span>
+        <span class="sub">The Current</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="news.html">News &amp; Events</a>
+      <a href="community.html" aria-current="page">Community</a>
+      <a href="contact.html">Contact Us</a>
+      <span class="nav-sub">
+<a href="blog.html">Blog</a>
+        <a href="shop.html">Shop</a>
+        <a href="events.html">Events</a>
+        <a href="plans.html">Plans</a>
+        <a href="return-policy.html">Return Policy</a>
+      </span>
+      <span class="nav-login" title="Members log-in lives on the live Wix site and is not wired in this mockup">Log In</span>
+    </nav>
+  </header>
+
+      <div id="carrier-backdrop" hidden aria-hidden="true"></div>
+    <div id="carrier-exit" hidden aria-hidden="true">
+      <button type="button" id="carrier-back">← Back to the grid</button>
+      <div class="carrier-step">
+        <button type="button" id="carrier-prev" aria-label="Previous carrier">‹</button>
+        <button type="button" id="carrier-next" aria-label="Next carrier">›</button>
+      </div>
+    </div>
+<div id="stage">
+    <p id="hint">Tap a carrier</p>
+    <div id="lineup-wrap">
+      <div id="lineup" role="list"></div>
+    </div>
+  </div>
+
+  <div id="giant-num" aria-hidden="true"></div>
+  <aside id="field-log" aria-hidden="true" aria-label="Field log">
+    <div class="card-top">
+      <img class="card-mark" src="assets/mark/chrome-ma-400.png" width="52" height="52" alt="Movin' Artists M/A mark">
+      <p class="card-label">Field log</p>
+      <button type="button" id="card-close" aria-label="Close field log">&times;</button>
+    </div>
+    <p class="card-number" data-field="number">CARRIER 00</p>
+    <h2 class="card-name" data-field="name"></h2>
+    <hr class="card-rule">
+    <div class="kit-logo-wrap" hidden><img alt="Kit Pedraza logo"></div>
+    <div class="field">
+      <span class="k">Transmission</span>
+      <span class="v" data-field="bio"></span>
+    </div>
+    <div class="field">
+      <span class="k">Handle</span>
+      <a class="v" data-field="handle" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+    <div class="field market">
+      <span class="k">Market</span>
+      <a href="https://www.movinartistsmarket.com" target="_blank" rel="noopener noreferrer">www.movinartistsmarket.com</a>
+    </div>
+    <p class="runes" lang="und">ᛃᛟᛁᚾ ᚢᛊ</p>
+  </aside>
+
+  <script src="js/carriers.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/community.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

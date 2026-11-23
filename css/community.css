@@ -1,4 +1,4 @@
-/* The Current / Community lineup — faithfully ported from the standalone prototype. */
+/* The Current / Community lineup. */
 body.community-page{
   overflow:hidden;
   height:100%;
@@ -338,8 +338,8 @@ body.community-page #stage{ padding-top:4.8rem; }
   word-break: break-word;
 }
 .field a.v:hover { color: var(--gold); }
-.field .v.is-placeholder,
-.field a.v.is-placeholder {
+.field .v.is-empty,
+.field a.v.is-empty {
   color: var(--muted);
   font-style: italic;
   font-size: 0.8rem;

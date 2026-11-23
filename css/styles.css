@@ -1,4 +1,4 @@
-/* Movin' Artists — private local mockup. Gold is reserved for the sigil. */
+/* Movin' Artists. Gold is reserved for the sigil. */
 
 @font-face{font-family:"Bebas Neue";src:url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap;}
 @font-face{font-family:"Oswald";src:url("../assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");font-weight:200 700;font-style:normal;font-display:swap;}
@@ -334,7 +334,7 @@ button{cursor:pointer;}
 .article h3{font-size:1.02rem;letter-spacing:.03em;margin:1.1rem 0 .3rem;color:var(--cream);}
 .article p{font-size:.95rem;line-height:1.65;color:var(--cream-dim);}
 .post-meta{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);}
-.is-placeholder,.form-note .is-placeholder{color:var(--muted);font-style:italic;}
+.is-empty,.form-note .is-empty{color:var(--muted);font-style:italic;}
 #receive .form-grid,.inner-page .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1rem;margin-top:1.2rem;max-width:42rem;}
 .inner-page label{display:flex;flex-direction:column;gap:.25rem;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);}
 .inner-page input,.inner-page select,.inner-page textarea{
@@ -356,3 +356,5 @@ body.community-page .mock-banner{font-size:.55rem;padding:.18rem .6rem;letter-sp
 @media (max-width:720px){
   body.community-page .mock-banner{font-size:.5rem;padding:.14rem .4rem;}
 }
+
+.signal-cta{margin-top:1.6rem;display:flex;flex-direction:column;gap:.8rem;align-items:flex-start;}

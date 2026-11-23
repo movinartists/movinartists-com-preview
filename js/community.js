@@ -1,7 +1,7 @@
 /* Community lineup — Filatov-style select, field-log card, Esc / outside close. */
 (function () {
-  const PLACEHOLDER_BIO = "[placeholder — no official bio on the live Community page]";
-  const PLACEHOLDER_HANDLE = "[placeholder — no profile handle on the live Community page]";
+  const EMPTY_BIO = "";
+  const EMPTY_HANDLE = "";
   const MARKET = "https://www.movinartistsmarket.com";
 
   const stage = document.getElementById("stage") || document.getElementById("current");
@@ -62,13 +62,15 @@
     card.querySelector("[data-field=name]").textContent = c.name;
     const bio = card.querySelector("[data-field=bio]");
     if (bio) {
-      bio.textContent = c.bio || PLACEHOLDER_BIO;
-      bio.classList.toggle("is-placeholder", !c.bio);
+      bio.textContent = c.bio || EMPTY_BIO;
+      bio.classList.toggle("is-empty", !c.bio);
+      if (bio.closest(".field")) bio.closest(".field").hidden = !c.bio;
     }
         const handleVal = c.liveHandle || c.handle;
     const handle = card.querySelector("[data-field=handle]");
-    handle.textContent = handleVal || PLACEHOLDER_HANDLE;
-    handle.classList.toggle("is-placeholder", !handleVal);
+    handle.textContent = handleVal || EMPTY_HANDLE;
+    handle.classList.toggle("is-empty", !handleVal);
+    if (handle.closest(".field")) handle.closest(".field").hidden = !handleVal;
     if (handleVal) {
       handle.href = "https://instagram.com/" + handleVal.replace(/^@/, "");
       handle.removeAttribute("aria-disabled");
@@ -268,6 +270,5 @@
   }, { passive: true });
 
   // Grid canvas is started in main.js. Expose for Playwright / local QA.
-  window.__prototype = { open, close, get selected() { return selected; } };
-  window.__current = window.__prototype;
+  window.__current = { open, close, get selected() { return selected; } };
 })();

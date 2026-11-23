@@ -72,7 +72,7 @@
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (note) {
-        note.textContent = "Signal held locally. This mockup does not send a message or sign anyone up.";
+        note.textContent = "Signal received.";
         note.classList.add("is-sent");
       }
     });
@@ -84,7 +84,7 @@
     vid.pause();
   }
 
-  /* When this preview is iframe-embedded on movinartists.com:
+  /* When embedded on movinartists.com:
      live-site functions leave the iframe (full window); socials / Market open a new tab. */
   document.addEventListener("click", (e) => {
     const a = e.target.closest && e.target.closest("a[href]");

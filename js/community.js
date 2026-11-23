@@ -16,6 +16,8 @@
   const prevBtn = document.getElementById("carrier-prev");
   const nextBtn = document.getElementById("carrier-next");
 
+  if (!lineup || !wrap) return;
+
   let selected = null;
   let trackRaf = 0;
 
